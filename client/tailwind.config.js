@@ -1,11 +1,13 @@
+// eslint-disable-next-line no-undef
+const flowbite = require("flowbite-react/tailwind");
+
 /** @type {import('tailwindcss').Config} */
-export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
-}
+export const content = ["./src/**/*.{js,jsx,ts,tsx}",
+  flowbite.content(),
+];
+export const theme = {
+  extend: {},
+};
+export const plugins = [
+  flowbite.plugin(),
+];
